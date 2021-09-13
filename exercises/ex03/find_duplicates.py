@@ -18,4 +18,4 @@ while i < len(word):
     i = i + 1
 
 number_of_letters = number_of_letters - len(word)
-print("Found duplicates: " + str(number_of_letters >= 1))
+print("Found duplicate: " + str(number_of_letters >= 1))
