@@ -1,4 +1,4 @@
-"""Challenge Question #1"""
+"""Challenge Question #1."""
 
 choice: int = int(input("Enter a number: "))
 
