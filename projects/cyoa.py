@@ -88,9 +88,9 @@ def guess_that_number(x: int) -> int:
     random_number: int = randint(1, 10)
     while x != random_number:
         if x > random_number:
-            print(player + "You guessed too high!" + "\U00002B07")
+            print(player + " You guessed too high!" + "\U00002B07")
         else:
-            print(player + "You guessed too low!" + "\U00002B06")
+            print(player + " You guessed too low!" + "\U00002B06")
         x = int(input("Guess again "))
     points = points + random_number
     total_points = total_points + random_number
