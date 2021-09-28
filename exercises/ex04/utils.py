@@ -8,6 +8,8 @@ __author__ = "730490857"
 def all(haystack: list[int], needle: int) -> bool:
     """Return true if the needle is found in the haystack."""
     i: int = 0
+    if i == 0:
+        return False
     while i < len(haystack):
         item: int = haystack[i]
         if item == needle:
@@ -36,7 +38,7 @@ def max(x: list[int]) -> int:
     if len(x) == 0:
         raise ValueError("max() arg is an empty list")
     i: int = 0
-    k: int = 0
+    k: int = -100000000
     while i < len(x) - 1:
         if x[i + 1] < x[i] and k < x[i + 1]:
             k = x[i]
