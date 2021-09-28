@@ -8,14 +8,14 @@ __author__ = "730490857"
 def all(haystack: list[int], needle: int) -> bool:
     """Return true if the needle is found in the haystack."""
     i: int = 0
-    if i == 0:
-        return False
     while i < len(haystack):
         item: int = haystack[i]
         if item == needle:
             i += 1
         else:
             return False
+    if i == 0:
+        return False
 
     return True
         
