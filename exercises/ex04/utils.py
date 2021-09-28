@@ -11,13 +11,15 @@ def all(haystack: list[int], needle: int) -> bool:
     while i < len(haystack):
         item: int = haystack[i]
         if item == needle:
-            return True
-        i += 1
+            i += 1
+        else:
+            return False
 
-    return False
+    return True
         
 
 def is_equal(x: list[int], y: list[int]) -> bool:
+    """Compares to lists to see if they are equal."""
     i: int = 0
     if len(x) != len(y):
         return False
@@ -30,14 +32,16 @@ def is_equal(x: list[int], y: list[int]) -> bool:
 
 
 def max(x: list[int]) -> int:
+    """Finds the max value in a list."""
     if len(x) == 0:
         raise ValueError("max() arg is an empty list")
     i: int = 0
     k: int = 0
     while i < len(x) - 1:
-        if x[i] < x[i + 1]:
-            k = x[i + 1]
-        else:
+        if x[i + 1] < x[i] and k < x[i + 1]:
             k = x[i]
+        elif k < x[i + 1]:
+            k = x[i + 1]
         i += 1
+
     return k
