@@ -40,7 +40,7 @@ def sub(x: list[int], a: int, b: int) -> list[int]:
 
 
 def concat(xs: list[int], ys: list[int]) -> list[int]:
-    """Creates a mega-list that has all of the elements of the first list followed by all of th elements of the second."""
+    """Creates a mega-list that has all of the elements of the first list followed by all of the elements of the second."""
     zs: list[int] = []
     i: int = 0
     while i < len(xs):
