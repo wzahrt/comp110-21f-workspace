@@ -17,7 +17,7 @@ print(schools)
 # Access a value by its key -- "lookup"
 print(f"UNC has {schools['UNC']} students.")
 
-# Remove a key-vaule pair from a dictionary
+# Remove a key-value pair from a dictionary
 # by its key
 schools.pop("Duke")
 
@@ -32,7 +32,7 @@ schools["NCSU"] += 200
 # Demonstration of dictionary literals
 
 # Empty dictionary literal
-schools = {} # Same as dict()
+schools = {}  # Same as dict()
 print(schools)
 
 # Alternatively, initialize key-value pairs
