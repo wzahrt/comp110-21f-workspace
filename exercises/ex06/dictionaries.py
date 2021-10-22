@@ -23,7 +23,7 @@ def invert(x: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(x: dict[str, str]) -> str:
     """Looks are the values in a dictionary and returns the most common one."""
-    i: str = ""
+    most_common: str = ""
     j: int = 0
     for key in x:
         k: int = 0
@@ -31,9 +31,9 @@ def favorite_color(x: dict[str, str]) -> str:
             if x[key] == x[b]:
                 k += 1
         if k >= j:
-            i = x[key]
+            most_common = x[key]
             j = k + 1
-    return i
+    return most_common
 
 
 def count(xs: list[str]) -> dict[str, int]:
