@@ -121,8 +121,3 @@ def switch_type(zs: dict[str, list[str]]) -> dict[str, list[int]]:
             i += 1
         result[key] = new_list
     return result
-
-
-
-def mean(zs: dict[str, int]) -> float:
-    """Takes the mean of the number of votes in each dictionary"""
