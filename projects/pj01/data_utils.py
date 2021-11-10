@@ -100,3 +100,29 @@ def count(xs: list[str]) -> dict[str, int]:
         i += 1
 
     return result
+
+
+def total(ys: dict[str, int]) -> int:
+    result: int = 0
+    for key in ys:
+        result += ys[key]
+    return result
+
+
+def switch_type(zs: dict[str, list[str]]) -> dict[str, list[int]]:
+    """Turns the type of the list value in the value of the dictionary into an int from a str."""
+    result: dict[str, list[int]] = {}
+    for key in zs:
+        i: int = 0
+        new_list: list[int] = []
+        while i < len(zs[key]):
+            a = int(zs[key][i])
+            new_list.append(a)
+            i += 1
+        result[key] = new_list
+    return result
+
+
+
+def mean(zs: dict[str, int]) -> float:
+    """Takes the mean of the number of votes in each dictionary"""
